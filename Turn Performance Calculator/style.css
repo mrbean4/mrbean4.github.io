@@ -1,0 +1,33 @@
+/*Writing CSS is a matter of unbearable mental gymnastics and I truly apologize for the sins of design I have commited */
+
+
+body{
+
+	background: linear-gradient(to right, #0aaff0, #02f25e);
+
+}
+.center {
+
+  /*I don't even know I just googled what ever visual result I wanted and copied the first result that worked */
+  /*I do not know what any of this means. */
+  /*Death to CSS */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  max-width:600px;
+  word-wrap:break-word;
+
+  font-size: 20px;
+
+  white-space: nowrap;
+}
+
+table, th, td {
+  border: 1px solid;
+
+  width: 100%;
+}
