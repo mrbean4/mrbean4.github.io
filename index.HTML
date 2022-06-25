@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Garbage-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Garbage-->
+
+	<!--Other Files-->
+	<script type="text/javascript" src="script.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!--Other Files-->
+
+	<title>Turn Performance Calculator</title>
+</head>
+<body>
+	<div class = "center" id = "data">
+		<table>
+
+  			<tr>
+
+    			<th>Measurments</th>
+    			<th>Value</th>
+
+  			</tr>
+
+
+  			<tr>
+    			<td>Turn Circle</td>
+    			<td id = "turnCircle"></td>
+		    </tr>
+
+		    <tr>
+    			<td>Turn Rate</td>
+    			<td id = "turnRate"></td>
+  			</tr>
+
+  			<tr>
+    			<td>Turn Time</td>
+    			<td id = "turnTime"></td>
+  			</tr>
+		</table>
+
+
+	</div>
+
+
+	<div id = "input">
+
+
+		<label for="speed"> Speed in knots:</label>
+		<input type="number" name="name" id = "speed">
+
+		<label for="bankAngle"> Bank angle in degrees:</label>
+		<input type="number" name="name" id = "bankAngle">
+		<button onclick="computePerformance()">Compute</button>
+
+
+
+	</div>
+
+
+
+	<div id="relLinks">
+		<a href="https://www.flightliteracy.com/wp-content/uploads/2020/01/3-28.jpg" target="_blank">Click here to convert G force pull to bank angle.</a>
+		
+
+	</div>
+	
+
+</body>
+</html>
