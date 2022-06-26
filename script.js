@@ -1,4 +1,3 @@
-
 //Just unit conversion
 function toRadians(degrees) {
 	return degrees * Math.PI / 180;
@@ -13,11 +12,17 @@ function roundHundreth(rounded){
     return Math.round(100 * rounded) / 100;
 }
 
+$('#turnCircle').text("********");
+$('#turnRate').text("********");
+$('#turnTime').text("********");
+
 
 function computePerformance(){
 
 var speed = $("#speed").val();
 var bAng = $("#bankAngle").val(); 
+
+
 
 
 //From this point on the fomulas are a very specific varity of aerodynamic black magic from various flight textbooks.
@@ -45,7 +50,17 @@ var allVals = "Turn circle radius in feet: " + turnCircle + ", Turn rate in degr
 
 
 //Send all the values to the HTML for formating and display. 
-$('#turnCircle').text(turnCircle + " ft");
+
+if(turnCircle > 26400){
+	$('#turnCircle').text(roundHundreth(turnCircle / 5280) + " Miles");
+	
+	
+}else{
+	$('#turnCircle').text(turnCircle + " ft");
+
+}
+
+//$('#turnCircle').text(turnCircle + " ft");
 $('#turnRate').text(turnRate + " deg/s");
 $('#turnTime').text(turnTime + " s");
 
