@@ -3,12 +3,11 @@
 
 body{
 
-	background: linear-gradient(to right, #0aaff0, #02f25e);
+	background: linear-gradient(to right, #02f25e, #0aaff0);
 
 }
 .center {
 
-  /*I don't even know I just googled what ever visual result I wanted and copied the first result that worked */
   /*I do not know what any of this means. */
   /*Death to CSS */
   margin: 0;
@@ -30,4 +29,26 @@ table, th, td {
   border: 1px solid;
 
   width: 100%;
+}
+
+.centerLeft{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+
+}
+
+.centerRight{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+
 }
